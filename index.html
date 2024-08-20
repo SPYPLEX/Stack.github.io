@@ -45,18 +45,20 @@
 
 <br>
 <br>
+  
 <h2 class="text-center" >Reach Us</h2>
-<input type="text" class="form-control" placeholder="Username">
+  <form name="myform" onsubmit="validate(); return false">
+<input type="text" class="form-control" placeholder="Username" id="u_name">
 <br>
 <br>
-<input type="email" class="form-control" placeholder="email " >
+<input type="email" class="form-control" placeholder="email " id="u_email">
 <br>
 <br>
 <textarea class="form-control" placeholder="Comments" row="8"></textarea>
 <br>
 <center>
 
-    <a href=" https://myaccount.google.com/intro/recovery/email" class="btn btn-warning">Forget</a>
+    <button type="submit" class="btn btn-warning">submit</a>
 
     <a href=" https://myaccount.google.com/intro/signinoptions/password" class="btn btn-primary">Reset</a>
 
@@ -64,6 +66,12 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    var u_name=document.myform.u_name;
+    var u_email=document.myform.u_email;
+    function validate{
+      alert("We'll get back to u soon !!")
+  </script>
 </form>
 </body>
 <br>
