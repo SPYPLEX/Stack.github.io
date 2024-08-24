@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="Greedy.css">
 </head>
 <body>
-<form name="myform" onsubmit="validate(); return false";>
+<form name="myform" method="post" onsubmit=" return validation();>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -24,8 +24,10 @@
       
           
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://myaccount.google.com/intro/signinoptions/password"><span class="glyphicon glyphicon-user"></span> Forgot</a></li>
+        <li><a href="https://linktr.ee/register"><span class="glyphicon glyphicon-user"></span> Forgot</a></li>
         <li><a href="https://myaccount.google.com/intro/signinoptions/password"><span class="glyphicon glyphicon-log-in"></span> Reset</a></li>
+        <li><a href=""> FAQs</a> </li>   
+        <li><a href="">Home</a></li>
       </ul>
     </div>
   </div>
@@ -48,10 +50,10 @@
   
 <h2 class="text-center" >Reach Us</h2>
   
-<input type="text" class="form-control" placeholder="Username" id="u_name">
+<input type="text" class="form-control" placeholder="Username" name="name">
 <br>
 <br>
-<input type="email" class="form-control" placeholder="email " id="u_email">
+<input type="email" class="form-control" placeholder="email " name="email">
 <br>
 <br>
 <textarea class="form-control" placeholder="Comments" row="8"></textarea>
@@ -67,9 +69,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script>
-    var u_name=document.myform.u_name.value;
-    var u_email=document.myform.u_email.value;
-    function validate{
+    function validation(){
+      var name=document.myform.name.value;
+      var email=document.myform.email.value;
       alert('We'll get back to u soon !!')
   </script>
   </form>
