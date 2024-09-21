@@ -3,12 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>www.stack.in</title>
+<title>www.gregarious.in</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="Greedy.css">
+<style>
+.header{
+padding:80px;
+font-size:2em;
+text-align:center;
+background-color:#90EE90;
+}
+</style>
+
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -17,16 +27,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Stack</a>
+      <a class="navbar-brand" href="#">Axion</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       
           
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://linktr.ee/register"><span class="glyphicon glyphicon-user"></span> Forgot</a></li>
-        <li><a href="https://myaccount.google.com/intro/signinoptions/password"><span class="glyphicon glyphicon-log-in"></span> Reset</a></li>
-        <li><a href=""> FAQs</a> </li>   
-        <li><a href="">Home</a></li>
+  <li><a href="#">Home</li></a>
+  <li><a href="#">FAQs</li></a>
+        <li><a href="https://myaccount.google.com/intro/recovery/email" ><span class="glyphicon glyphicon-user">Forget</span> </a></li>
+        <li><a href=" https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://wise.com/login/forgot-password&ved=2ahUKEwiG1JHInNOIAxWPSmwGHR99CnAQFnoECDgQAQ&usg=AOvVaw0mxu2V8hTRhZDefYoH4Gxz "><span class="glyphicon glyphicon-log-in">Reset</span></a></li>
+
+
+
+
+    
       </ul>
     </div>
   </div>
@@ -36,8 +51,9 @@
                 </div>
             </div>
 <br>
-<h2 class="text-center">We are the design professionls that provide
-<br> well aesthetic & more ingenuity product to our clients.
+<div class="header">
+  
+<P>We are the design organisation that provide well aesthetic & more ingenuity product to our clients.</P>
 <br>
 </h2>
 </div>
@@ -46,35 +62,49 @@
 
 <br>
 <br>
-  
 <h2 class="text-center" >Reach Us</h2>
-  
-<input type="text" class="form-control" placeholder="Username" >
-<br>
-<br>
-<input type="email" class="form-control" placeholder="email " required="required">
-<br>
-<br>
-<textarea class="form-control" placeholder="Comments" row="8"></textarea>
-<br>
 <center>
-
-    <button type="button" class="btn btn-primary">submit</button>
-  <button type="button" class="btn btn-success">login</button>
-
+<form id="myForm">
+  <div class="form-group">
     
+    <input type="text"class="form-control" placeholder="username"id="name" required>
+    <div class="invalid-feedback"></div>
+  <br>
+  <div class="form-group">
+    
+    <input type="email" class="form-control" placeholder="e-mail"id="email" required>
+    <div class="invalid-feedback"></div>
+  <br>
+  <div class="form-group">
+    <textarea class="form-control"placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="invlaid-feedback"></div>
+    
+<br>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script>
+$(document).ready(function() {
+  $('#myForm').submit(function(event) {
+    if (!$('#myForm')[0].checkValidity()) {
+      event.preventDefault();
+      $('#myForm').addClass('was-validated');
+    }
+  });
+});
+ <button type="button" class="btn btn-primary">submit</button>
+
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-  </form>
+</form>
+</body>
 <br>
 <br>
 <br>
 <br>
 <footer class="text-center">Copyright &copy; 2022-27 : All Rights Reserved</footer>
 </html>
-
 
 
